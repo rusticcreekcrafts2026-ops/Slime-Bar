@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rustic Creek Crafts &amp; Mobile Slime Bar</title>
+<meta name="description" content="Mobile slime bar parties in the Parkersburg, WV area. We bring everything needed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1B1340;--ground:#F8F4FF;--soft:#4A4170;--lilac:#E4DCFF;--lime:#8CFF5A;--pink:#FF5FA8;--sun:#FFD84D;--sky:#4DC9FF;--accent:#8CFF5A}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;font-size:18px;line-height:1.55}
+a{color:var(--ink)}a:hover{color:#6B2FD9}
+h1,h2,h3,p{margin:0}
+.display{font-family:'Bagel Fat One',system-ui,sans-serif;font-weight:400}
+.wrap{max-width:1120px;margin:0 auto;padding-left:24px;padding-right:24px}
+.hero{background:var(--ink);color:var(--ground);position:relative}
+.nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding-top:20px}
+.brand{font-size:22px;color:var(--ground);text-decoration:none}
+.brand:hover{color:var(--ground)}
+.navlinks{display:flex;flex-wrap:wrap;gap:8px}
+.navlinks a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;color:var(--ground);text-decoration:none;font-weight:500}
+.navlinks a.cta{background:var(--accent);color:var(--ink);font-weight:700;border-radius:999px;padding:0 20px}
+.herogrid{display:flex;flex-wrap:wrap;align-items:center;gap:40px;padding:64px 0 120px}
+.herogrid>.copy{flex:1 1 380px;min-width:0}
+.herogrid>.art{flex:1 1 300px;min-width:0;display:flex;justify-content:center}
+.tag{display:inline-block;padding:6px 14px;border:2px solid var(--pink);color:var(--pink);border-radius:999px;font-weight:700;font-size:14px}
+h1{font-size:64px;line-height:1.02;margin:20px 0;color:var(--accent)}
+.lead{font-size:20px;max-width:520px;color:var(--lilac);margin-bottom:32px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;font-weight:700;text-decoration:none;border-radius:999px}
+.btn.fill{background:var(--accent);color:var(--ink)}
+.btn.fill:hover{color:var(--ink)}
+.btn.line{border:2px solid var(--ground);color:var(--ground)}
+.btn.line:hover{color:var(--ground)}
+.drip{display:block;width:100%;height:70px;position:absolute;bottom:-1px;left:0}
+section{padding-top:72px;padding-bottom:72px}
+h2{font-size:44px;line-height:1.1;margin-bottom:12px}
+.sub{max-width:560px;color:var(--soft);margin-bottom:36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:#fff;border:3px solid var(--ink);border-radius:24px;padding:28px}
+.card .n{font-size:40px}
+.card h3{margin:4px 0 8px;font-size:22px}
+.card p{color:var(--soft)}
+.dark{background:var(--ink);color:var(--ground)}
+.dark h2{color:var(--accent)}
+.dark .sub{color:var(--lilac)}
+.mcard{border:2px solid #4A3F8F;border-radius:24px;padding:28px}
+.mcard h3{margin-bottom:12px;font-size:22px}
+.mcard p{color:var(--lilac)}
+.safety{margin-top:28px;color:var(--lilac);font-size:16px}
+.pkgs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.pkg{display:block;text-align:left;width:100%;padding:28px;border-radius:24px;cursor:pointer;color:var(--ink);border:3px solid var(--ink);background:#fff;font:inherit;min-height:44px}
+.pkg[aria-pressed="true"]{background:var(--accent);box-shadow:6px 6px 0 var(--ink)}
+.pkg .name{display:block;font-size:28px;margin-bottom:4px}
+.pkg .blurb{display:block;font-size:16px;margin-bottom:16px}
+.pkg .price{display:block;font-weight:700;font-size:22px;margin-bottom:8px}
+.pkg .details{display:block;font-size:16px}
+.events{background:#fff;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.events section{padding-top:56px;padding-bottom:56px}
+.events h2{font-size:36px;margin-bottom:20px}
+.chips{display:flex;flex-wrap:wrap;gap:12px}
+.chip{padding:10px 20px;border-radius:999px;font-weight:700}
+.book{display:flex;flex-wrap:wrap;gap:40px}
+.book>div{flex:1 1 320px;min-width:0}
+.pick{background:var(--ink);color:var(--ground);border-radius:24px;padding:24px}
+.pick .k{font-size:14px;color:var(--lilac)}
+.pick .v{font-size:28px;margin:4px 0 12px;color:var(--accent)}
+.swatches{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.sw{width:44px;height:44px;border-radius:999px;cursor:pointer;border:3px solid var(--ink)}
+.sw[aria-pressed="true"]{border-color:#fff;box-shadow:0 0 0 3px var(--pink)}
+.contact{margin-top:24px;color:var(--soft)}
+form{display:flex;flex-direction:column;gap:16px}
+.field{display:flex;flex-direction:column;gap:6px}
+.row{display:flex;flex-wrap:wrap;gap:16px}
+.row .field{flex:1 1 140px}
+label{font-weight:700}
+input,textarea{min-height:48px;padding:0 16px;border:3px solid var(--ink);border-radius:14px;font:inherit;background:#fff;color:var(--ink)}
+textarea{padding:12px 16px}
+.send{display:flex;align-items:center;justify-content:center;min-height:56px;border:3px solid var(--ink);border-radius:999px;background:var(--pink);color:var(--ink);font-size:18px;font-weight:700;text-decoration:none}
+.send:hover{color:var(--ink)}
+.note{font-size:14px;color:var(--soft)}
+footer{background:var(--ink);color:var(--lilac)}
+footer .wrap{padding-top:32px;padding-bottom:32px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:16px}
+footer .brand{color:var(--accent);font-size:22px}
+:focus-visible{outline:3px solid var(--pink);outline-offset:2px}
+@media (max-width:600px){h1{font-size:44px}h2{font-size:34px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+<div class="wrap">
+<div class="nav">
+<a class="brand display" href="#top">Rustic Creek Crafts &amp; Mobile Slime Bar</a>
+<nav class="navlinks" aria-label="Main">
+<a href="#how">How it works</a>
+<a href="#packages">Packages</a>
+<a class="cta" href="#book">Book us</a>
+</nav>
+</div>
+<div class="herogrid" id="top">
+<div class="copy">
+<div class="tag">Serving the Parkersburg, WV area</div>
+<h1 class="display">We bring the slime to you.</h1>
+<p class="lead">A hands-on slime-making bar that rolls up to your party, school event or market stall. Guests pick a base, a color, a scent and their add-ins, then squish, stretch and take it home.</p>
+<div class="btns">
+<a class="btn fill" href="#book">Book your slime bar</a>
+<a class="btn line" href="#packages">See packages</a>
+</div>
+</div>
+<div class="art">
+<svg viewBox="0 0 400 400" role="img" aria-label="A glossy blob of slime with a drip" style="width:100%;max-width:380px;height:auto">
+<path id="blob" d="M70 170 C60 90 150 40 220 55 C310 70 350 140 335 215 C325 275 290 300 262 310 C262 335 270 350 262 366 C252 384 230 380 226 360 C222 340 226 322 218 316 C170 322 100 300 80 240 C74 218 72 194 70 170 Z" fill="#8CFF5A"/>
+<ellipse cx="150" cy="115" rx="34" ry="18" fill="#FFFFFF" opacity="0.55" transform="rotate(-25 150 115)"/>
+<circle cx="260" cy="150" r="9" fill="#FFFFFF" opacity="0.4"/>
+<circle cx="205" cy="225" r="14" fill="#FFFFFF" opacity="0.25"/>
+</svg>
+</div>
+</div>
+</div>
+<svg class="drip" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+<path d="M0 0 L0 30 C60 30 70 80 110 80 C150 80 150 30 220 30 C300 30 300 60 340 60 C380 60 380 30 460 30 C540 30 540 85 590 85 C640 85 640 30 720 30 C800 30 800 65 850 65 C900 65 900 30 980 30 C1060 30 1060 80 1110 80 C1160 80 1170 30 1240 30 C1320 30 1330 55 1380 55 C1410 55 1430 40 1440 35 L1440 90 L0 90 Z" fill="#F8F4FF"/>
+</svg>
+</header>
+
+<main>
+<section id="how" class="wrap" style="padding-top:56px">
+<h2 class="display">How it works</h2>
+<p class="sub">Three steps from empty table to a jar of slime each guest made themselves.</p>
+<div class="grid">
+<div class="card"><div class="n display" style="color:#FF5FA8">1</div><h3>We set up</h3><p>We arrive with everything needed for the party. There is nothing for you to buy or bring.</p></div>
+<div class="card"><div class="n display" style="color:#6B2FD9">2</div><h3>Guests build</h3><p>Everyone chooses a base, color, scent and add-ins, then mixes their own batch with guidance.</p></div>
+<div class="card"><div class="n display" style="color:#1B8A3A">3</div><h3>Take it home</h3><p>Each guest leaves with a jar of slime they made themselves.</p></div>
+</div>
+</section>
+
+<div class="dark">
+<section class="wrap">
+<h2 class="display">The slime menu</h2>
+<p class="sub">Build your own slime from these options.</p>
+<div class="grid">
+<div class="mcard"><h3 style="color:#FF5FA8">Bases</h3><p>Slime<br>Butter slime</p></div>
+<div class="mcard"><h3 style="color:#FFD84D">Glitter</h3><p>Red<br>Blue<br>Purple<br>Green<br>Silver<br>White<br>Orange<br>Pink<br>Light blue<br>Other colors upon request</p></div>
+<div class="mcard"><h3 style="color:#4DC9FF">Scents</h3><p>Apple<br>Cherry<br>Coffee<br>Cucumber<br>Halloween scents<br>Christmas scents<br>Others upon request</p></div>
+<div class="mcard"><h3 style="color:#8CFF5A">Colors</h3><p>Red<br>Purple<br>Black<br>Orange<br>Green<br>Yellow<br>Blue<br>Other colors upon request</p></div>
+<div class="mcard"><h3 style="color:#FF5FA8">Trinkets</h3><p>Mixture<br>Theme trinkets<br>Custom upon request</p></div>
+<div class="mcard"><h3 style="color:#FFD84D">Fillers</h3><p>Mixture<br>Theme fillers<br>Custom upon request</p></div>
+<div class="mcard"><h3 style="color:#4DC9FF">Toppings</h3><p>Mixture<br>Theme toppings<br>Custom upon request</p></div>
+</div>
+<p class="safety"><strong>Warning:</strong> not suitable for children under 3. Do not eat.<br>Ingredients: glue, baking soda, contact solution, food coloring, fragrance oil.</p>
+</section>
+</div>
+
+<section id="packages" class="wrap">
+<h2 class="display">Pick a package</h2>
+<p class="sub">Both packages are a 2 hour party and include everything needed. Each extra child over 10 is $10. Tap one to choose it, then book below.</p>
+<div class="pkgs" id="pkgs">
+<button type="button" class="pkg" data-id="party" aria-pressed="true">
+<span class="name display">Slime Party</span><span class="blurb">Everything needed for a 2 hour party</span><span class="price">$250</span><span class="details">For 10 kids. Each extra child is $10.</span>
+</button>
+<button type="button" class="pkg" data-id="deluxe" aria-pressed="false">
+<span class="name display">Slime + Butter Slime</span><span class="blurb">Upgrade: make both kinds</span><span class="price">$350</span><span class="details">For 10 kids. Each extra child is $10.</span>
+</button>
+</div>
+</section>
+
+<div class="events">
+<section class="wrap">
+<h2 class="display">Perfect for</h2>
+<div class="chips">
+<span class="chip" style="background:#8CFF5A">Birthday parties</span>
+<span class="chip" style="background:#FF5FA8">School and library events</span>
+<span class="chip" style="background:#FFD84D">Community fairs</span>
+<span class="chip" style="background:#4DC9FF">Corporate team days</span>
+<span class="chip" style="background:#C9A8FF">Markets and pop-ups</span>
+</div>
+</section>
+</div>
+
+<section id="book" class="wrap">
+<div class="book">
+<div>
+<h2 class="display">Book the slime bar</h2>
+<p class="sub" style="margin-bottom:24px">Tell us the date and the crowd and we will reply with availability.</p>
+<div class="pick">
+<div class="k">YOUR PICK</div>
+<div class="v display" id="pickName">Slime Party</div>
+<div class="k">STARTER SLIME COLOR</div>
+<div class="swatches" id="swatches"></div>
+</div>
+<p class="contact">Email: <a href="mailto:rusticcreekcrafts2026@gmail.com">rusticcreekcrafts2026@gmail.com</a><br>Phone: <a href="tel:3046152611">304-615-2611</a><br>Facebook: Rustic Creek Crafts</p>
+</div>
+<div>
+<form id="form" onsubmit="return false">
+<div class="field"><label for="f-name">Your name</label><input id="f-name" type="text" autocomplete="name"></div>
+<div class="field"><label for="f-email">Email</label><input id="f-email" type="email" autocomplete="email"></div>
+<div class="row">
+<div class="field"><label for="f-date">Event date</label><input id="f-date" type="date"></div>
+<div class="field"><label for="f-kids">Number of kids</label><input id="f-kids" type="number" min="1"></div>
+</div>
+<div class="field"><label for="f-note">Anything we should know?</label><textarea id="f-note" rows="4"></textarea></div>
+<a class="send" id="send" href="#">Request this date</a>
+<p class="note">This opens your email app with your request filled in, addressed to us.</p>
+</form>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<span class="brand display">Rustic Creek Crafts &amp; Mobile Slime Bar</span>
+<span>Serving the Parkersburg, WV area</span>
+</div>
+</footer>
+
+<script>
+(function () {
+  var EMAIL = 'rusticcreekcrafts2026@gmail.com';
+  var packages = { party: 'Slime Party', deluxe: 'Slime + Butter Slime' };
+  var colors = [
+    { id: 'lime', label: 'Lime', hex: '#8CFF5A' },
+    { id: 'pink', label: 'Pink', hex: '#FF5FA8' },
+    { id: 'sky', label: 'Sky blue', hex: '#4DC9FF' },
+    { id: 'sun', label: 'Sunshine yellow', hex: '#FFD84D' },
+    { id: 'grape', label: 'Grape', hex: '#A66BFF' }
+  ];
+  var state = { pkg: 'party', color: 'lime' };
+  var $ = function (id) { return document.getElementById(id); };
+
+  function render() {
+    var cur = colors.filter(function (c) { return c.id === state.color; })[0];
+    document.querySelectorAll('.pkg').forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.id === state.pkg));
+    });
+    $('pickName').textContent = packages[state.pkg];
+    $('blob').setAttribute('fill', cur.hex);
+    document.querySelectorAll('.sw').forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.id === state.color));
+    });
+  }
+
+  colors.forEach(function (c) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'sw';
+    b.dataset.id = c.id;
+    b.style.background = c.hex;
+    b.setAttribute('aria-label', c.label);
+    b.addEventListener('click', function () { state.color = c.id; render(); });
+    $('swatches').appendChild(b);
+  });
+
+  document.querySelectorAll('.pkg').forEach(function (b) {
+    b.addEventListener('click', function () { state.pkg = b.dataset.id; render(); });
+  });
+
+  $('send').addEventListener('click', function (e) {
+    var cur = colors.filter(function (c) { return c.id === state.color; })[0];
+    var body = 'Name: ' + $('f-name').value +
+      '\nEmail: ' + $('f-email').value +
+      '\nEvent date: ' + $('f-date').value +
+      '\nNumber of kids: ' + $('f-kids').value +
+      '\nPackage: ' + packages[state.pkg] +
+      '\nStarter slime color: ' + cur.label +
+      '\n\nNotes:\n' + $('f-note').value;
+    this.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent('Slime bar booking request') + '&body=' + encodeURIComponent(body);
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
